@@ -16,7 +16,7 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
-  color: #6f8ba4;
+  /* color: #6f8ba4; */
   font-weight: 400;
   overflow-x: hidden;
 }
@@ -273,16 +273,19 @@ input[type="tel"]:focus {
   height: 100%;
   opacity: 0.9;
   /* background: #223a66; */
- /* background:  linear-gradient(
+  background:  linear-gradient(
   90deg,
   rgba(238, 249, 255, 1) 0%,
   rgba(238, 249, 255, 0.2) 100%
-); */
+);  
 }
 .sizeIcon{
   font-size: 18px;
 }
-
+ .aboutClr{
+  color: #223a66 !important;
+  font-weight: 800;
+ }
 .overly-2 {
   position: relative;
 }
@@ -297,7 +300,10 @@ input[type="tel"]:focus {
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
 }
-
+.john{
+  display: block !important;
+}
+ 
 .text-sm {
   font-size: 14px;
 }
@@ -1115,7 +1121,7 @@ a:focus {
 }
 .testimonial:before {
   width: 48%;
-  height: 100%;
+  height: 95%;
   top: 0;
   right: 15px;
   position: absolute;
@@ -1307,6 +1313,9 @@ a:focus {
 }
 .comment-area span {
   font-size: 14px;
+}
+.monday{
+  font-size: 20px !important;
 }
 
 .posts-nav h6 {
