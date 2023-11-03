@@ -273,6 +273,88 @@ input[type="tel"]:focus {
 .gmaiLMargin{
   margin-top: 30px !important;
 }
+.cardDiv{
+  
+	height: 300px;
+	border-radius: 15px;
+	padding: 1.5rem;
+	position: relative;
+	transition: 0.4s ease-out;
+	box-shadow: 0px 7px 10px rgba(black, 0.5) !important;
+}
+	.cardDiv:hover{
+    transform: translateY(20px) !important;
+  }
+		.cardDiv:hover .info{
+      display: block;
+    }
+  .cardDiv:before{
+    opacity: 1 !important;
+  }
+			
+		.info{
+      opacity: 1;
+			transform: translateY(0px);
+    }
+	
+ 
+  .info:before{
+    content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+		border-radius: 15px;
+		background: rgba(black, 0.6);
+		z-index: 2;
+		transition: 0.5s;
+		opacity: 0;
+
+  }
+	.imgDiv{
+    width: 100%;
+		height: 100%;
+		object-fit: cover !important;
+		position: absolute !important;
+		top: 0;
+		left: 0;
+		border-radius: 15px;
+  }
+  .info{
+    position: relative;
+    z-index: 3;
+    color: white !important;
+    opacity: 0 !important;
+    transform: translateY(30px) !important;
+    transition: 0.5s !important;
+  }
+  .contentone{
+    letter-spacing: 1px;
+			font-size: 15px;
+			margin-top: 8px;
+  }
+  
+/* .contentone{
+  bottom: 90px;
+  display: none;
+ 
+} */
+/* .contentone:hover{
+  display: block !important;
+  bottom: 90px !important;
+  cursor: pointer !important;
+  color: #000 !important;
+  border: 1px solid red !important; 
+  z-index: 2;
+ 
+}
+.imgHover:hover{
+  background: #25383C!important;
+  opacity: 0.7;
+
+} */
 
 .overlay:before {
   content: "";
@@ -2172,3 +2254,51 @@ span {
 .product-price-btn button:hover {
   background-color: #79b0a1;
 }
+ .carD{
+  /* width: 400px; */
+  height: 320px;
+  /* margin: 100px auto; */
+  position: relative;
+  overflow: hidden;
+ }
+ .carD img{
+  transition: transform .8s ease;
+}
+.carD:hover img{
+  transform: scale(1.1);
+}
+ .carD:hover .cont{
+  opacity: 0.5;
+  transform: scale(1);
+}
+.imgH{
+  height: 305px;
+}
+.imgD{
+  height: 290px;
+}
+.cont{
+  position: absolute;
+  background-color: #223a66;
+  width: 100%;
+  height: 305px;
+  top: 0;
+  transform: scale(1.3);
+  opacity: 0;
+  transition: transform .6s ease 0s;
+}
+ .contone{
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+ }
+ .conttwo{
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  z-index: 1;
+  opacity: 1;
+ }
+ .textClr{
+  color:  whitesmoke !important;
+ }
